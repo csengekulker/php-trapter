@@ -21,6 +21,7 @@ if ($rootBase < 0) {
 }
 
 echo file_get_contents("templates/head.html");
+echo file_get_contents("templates/navbar.html");
 $page =  file_get_contents("templates/result.html");
 $page = str_replace('{{ area }}', $area, $page);
 echo $page;
